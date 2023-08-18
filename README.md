@@ -82,9 +82,9 @@ The structure of all models (ImageNet pre-trained and optimized models) has the 
 
 **4.** **"plot_confusion_matrics.py"**： Defines the process of drawing a multi-class confusion matrix for the well-trained model. A confusion matrix is used for each model to visualize its distribution of prediction results on the same dataset, which counts the number of correctly and incorrectly classified samples for each type of brain tumor. This four-class confusion matrix can be converted into a one-vs-all class confusion matrix (binary-class confusion matrix) to calculate class-wise performance metrics. Take one of the brain tumor classes, glioma, as an example. In the form of a binary confusion matrix, the positive class refers to the type of gliomas, and the negative class represents "NOT gliomas" (Meningioma, Pituitary, and No-tumor). In this way, the metrics of an individual model to classify each type of brain tumor can be measured by using corresponding formulas; these metrics have an important reference value for evaluating the performance of the model.
 
-**5.** **"inference.py"**: This file is used to classify brain tumors given a single input MRI image using the model，the input image path can be modified to change a different MRI image.
+**5.** **"inference.py"**: This file is used to classify brain tumors given a single input MRI image using the model，the input image path can be modified to change a different MRI image. Click the "main" function in this file below to run a model's classification prediction of one MRI image.
 
-**6.** **"multi_ inference.py"**: Used to classify multiple input MRI images at one time, it can accept multiple inputs for classification at one time compared to the "inference.py" file.
+**6.** **"multi_ inference.py"**: Used to classify multiple input MRI images at one time, it can accept multiple inputs for classification at one time compared to the "inference.py" file. Click the "main" function in this file below to run a model's classification prediction of multiple MRI images at one time.
 
 **7.** **"train.log"**：The model is trained with metrics tracking and recording, loss and accuracy.
 
