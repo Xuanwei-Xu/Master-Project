@@ -21,7 +21,7 @@ Links to the pubicly available datasets used in this project are provided below:
 **Platform**: Anaconda3 2021.11(64 bits)
 **Basic Steps**: Install zip Pytorch 2.0.1 from website, then extract it and place the folder into the path : "Anaconda3\envs\pytorch2.0.1\python.exe", then open this project using Pycharm and add a python interpreter using this path.
 
-### Dirctory and File Description in this project
+### Dirctory Description in this project
 **1.** **"brain_dataset"**: This directory represents the original brain tumor dataset.
 
 **2.** **"brain_dataset_24b"**: This directory represents the brain tumor dataset converted to RGB data format.
@@ -69,7 +69,10 @@ python main_contrast.py \
 
 **10.** **"vit"**, **"swin_transformer"**: represents two extension algorithms( they are popular transformer models), they won't mention in my dissertation.
 
-**Files Descriptions**: The structure of all models (ImageNet pre-trained and optimized models) has the following files: **"inference.py"**, **"model.py"**, **"multi_ inference.py"**, **"plot_confusion_matrics.py"**, **"test.py"**, **"train _xx model.py"**, **"train.log"**, **"test.log**
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Files Descriptions
+The structure of all models (ImageNet pre-trained and optimized models) has the following files: **"inference.py"**, **"model.py"**, **"multi_ inference.py"**, **"plot_confusion_matrics.py"**, **"test.py"**, **"train _xx model.py"**, **"train.log"**, **"test.log**
 
 **1.** **model.py**: The architecture and components of the model are defined as well as the necessary neural network modules.
 
@@ -83,6 +86,6 @@ python main_contrast.py \
 
 **6.** **"multi_ inference.py"**: Used to classify multiple input MRI images at one time, it can accept multiple inputs for classification at one time compared to the "inference.py" file.
 
-**"train.log"**：The model is trained with metrics tracking and recording, loss and accuracy.
+**7.** **"train.log"**：The model is trained with metrics tracking and recording, loss and accuracy.
 
-**"test.log"**: Four class-wise performance metrics (accuracy, precision, specificity, sensitivity) computed by the well-trained model on the test set were recorded.
+**8.** **"test.log"**: Four class-wise performance metrics (accuracy, precision, specificity, sensitivity) computed by the well-trained model on the test set were recorded.
